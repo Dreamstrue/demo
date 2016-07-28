@@ -1,22 +1,18 @@
 package com.testSocket.after_jdk1_4_NioSocket.test;
 
 import java.io.IOException;
-import java.nio.channels;
 import java.nio.channels.ClosedSelectorException;
 import java.nio.channels.IllegalSelectorException;
 import java.nio.channels.SelectionKey;
-import java.nio.channels.spi;
 import java.nio.channels.spi.AbstractSelectableChannel;
 import java.nio.channels.spi.AbstractSelector;
 import java.nio.channels.spi.SelectorProvider;
 import java.net.SocketException;
-import java.util;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import sun.misc;
 
 /**
  * Base Selector implementation class.

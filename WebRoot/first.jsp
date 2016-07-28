@@ -19,7 +19,7 @@
 	<a href="demoTest.jsp">demoTest.jsp</a><br>
 	<a href="windowObjectTest.jsp">测试window对象的自定义属性</a><br>
 	<a href="testCSS_filter.jsp">测试css中的过滤器</a><br>
-	<a href=""></a><br>
+	<a href="test$.data.jsp">测试$.data()</a><br>
 	<a href=""></a><br>
 	<a href=""></a><br>
 	<a href=""></a><br>
