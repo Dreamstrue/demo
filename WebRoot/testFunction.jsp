@@ -5,26 +5,18 @@
 <head>
 <script type="text/javascript" src="js/jquery-1.8.0.min.js" charset="utf-8"></script>
 <script type="text/javascript">
-(function(p){
-	alert("匿名函数的参数为=="+p);
-})(10);
+
+//匿名函数的调用方式
+(function(){alert("匿名函数的调用方式一");})();
+(function(){alert("匿名函数的调用方式二");}());
+// function(){alert("匿名函数的调用方式二");}();//由于表达式【function(){alert("匿名函数的调用方式二");}】是一个合法的独立的语法格式，所有页面语法校验无法识别【()】
+// function sm(){alert("匿名函数的调用方式二");}();//如果在声明的sm函数后面加上()，同样语法校验不会通过
 
 
-
-	$(function(){
-		var dom_ = $("#ddd").get(0);//将jquery对象转化为dom对象
-		//向dom_元素中添加age属性，并设置它的值为18
-		$.data(dom_,'age','18');
-		//向dom_元素中添加name属性，并设置它的值为yyf
-		$.data(dom_,'name','yyf');
-		//获取dom_元素中所有的数据
-		var tv = $.data(dom_);
-		console.log(tv);
-		console.log(tv.name);
-		//获取dom_元素中age的值
-		var ov = $.data(dom_,'age');
-		console.log(ov);
-	})
+var i = function(){return 10;}();//如果匿名函数前加上运算符，比如= - ！ new等符号和关键字时，就表明这是一个函数表达式
+alert("i:"+i);
+var j = 1&&function(){return true;}();
+alert("j:"+j);
 
 </script>
 
