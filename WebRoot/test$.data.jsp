@@ -5,11 +5,6 @@
 <head>
 <script type="text/javascript" src="js/jquery-1.8.0.min.js" charset="utf-8"></script>
 <script type="text/javascript">
-(function(p){
-	alert("匿名函数的参数为=="+p);
-})(10);
-
-
 
 	$(function(){
 		var dom_ = $("#ddd").get(0);//将jquery对象转化为dom对象
